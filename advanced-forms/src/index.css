@@ -7,9 +7,10 @@ html {
   text-align: center;
   border: 2px solid #ff4500;
   border-radius: 8px;
-  margin: 50px 400px;
+  margin: 0 auto;
   padding-bottom: 40px;
   background-color: #f08080;
+  width: 50vw;
 }
 
 form {

@@ -134,7 +134,9 @@ export default function Form() {
         I agree to terms and Conditions
       </label>
       <pre>{JSON.stringify(post, null, 2)}</pre>
-      <button disabled={buttonDisabled}>Submit</button>
+      <button name="submit" disabled={buttonDisabled}>
+        Submit
+      </button>
     </form>
   );
 }
