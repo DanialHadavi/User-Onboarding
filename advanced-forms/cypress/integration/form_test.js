@@ -7,6 +7,11 @@ describe("Test our inputs and submit our form", () => {
       .type("Danial")
       .should("have.value", "Danial");
     cy.get("input[name='email']")
+      .type("Invalid Email")
+      .should("have.value", "Invalid Email");
+    cy.wait(700);
+    cy.get("input[name='email']")
+      .clear()
       .type("test@test.com")
       .should("have.value", "test@test.com");
     cy.get('input[name="password"]')
@@ -15,6 +20,7 @@ describe("Test our inputs and submit our form", () => {
     cy.get('input[name="terms"]')
       .check()
       .should("be.checked");
+
     cy.get('button[name="submit"]').click();
   });
 });
